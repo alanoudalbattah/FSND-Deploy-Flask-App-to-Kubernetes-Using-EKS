@@ -112,8 +112,4 @@ def _get_jwt(user_data):
     return jwt.encode(payload, JWT_SECRET, algorithm='HS256')
 
 if __name__ == '__main__':
-    #When i traied running APP.run(host='127.0.0.1', port=8080, debug=True)
-    #I got the following error:
-    #!OSError: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions
-    #Therefore, i used port 8081 insted :)
-    APP.run(host='127.0.0.1', port=8081, debug=True)
+    APP.run(host='127.0.0.1', port=80, debug=True)

@@ -10,4 +10,4 @@ RUN pip install --upgrade pip
 RUN  pip install -r requirements.txt
 
 #TODO Define an entrypoint which will run the main app using the Gunicorn WSGI serve
-ENTRYPOINT ["gunicorn", "-b", ":8081", "main:APP"]
+ENTRYPOINT ["gunicorn", "-b", ":8080", "main:APP"]
